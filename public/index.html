@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/fontawesome-free/css/all.min.css"
+    />
+    <title>React App</title>
+    <style>
+      .h-audio {
+        height: 50px;
+      }
+      .profil-email {
+        margin-top: -5px;
+      }
+      .img-profil {
+        width: 70px;
+      }
+      .img-profil-latest {
+        width: 35px;
+      }
+      .message-height {
+        height: 70vh;
+      }
+      .no-suggestions {
+        color: #999;
+        padding: 0.5rem;
+      }
+      .image-message {
+        border-radius: 10px;
+        width: 100%;
+      }
+      .suggestions {
+        border: 1px solid #999;
+        border-top-width: 0;
+        list-style: none;
+        margin-top: 0;
+        max-height: 143px;
+        overflow-y: auto;
+        padding-left: 0;
+        width: calc(300px + 1rem);
+      }
+
+      .suggestions li {
+        padding: 0.5rem;
+      }
+
+      .suggestion-active,
+      .suggestions li:hover {
+        background-color: #008f68;
+        color: #fae042;
+        cursor: pointer;
+        font-weight: 700;
+      }
+
+      .suggestions li:not(:last-of-type) {
+        border-bottom: 1px solid #999;
+      }
+
+      p.text-status {
+        font-size: 12px;
+        margin-top: -5px;
+      }
+    </style>
+  </head>
+  <body style="background-color: #d6d6d6">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script>
+      // klik enter to send message
+      var sendMessage = document.getElementById("text_message");
+      sendMessage.addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementById("button_send_message").click();
+        }
+      });
+    </script>
+    <div id="root"></div>
+  </body>
+</html>
