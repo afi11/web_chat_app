@@ -7,20 +7,23 @@
 
 ## Screenshots
 <p align="left">
-  <img src="./screenshots/home.png" width="250">
-  <img src="./screenshots/chatroom.png" width="250">
-  <img src="./screenshots/notification.png" width="250">
+  <img src="./screenshots/home.png" width="450">
+  <img src="./screenshots/chatroom.png" width="450">
+  <img src="./screenshots/notification.png" width="450">
+  <img src="./screenshots/resetpass.png" width="450">
 </p>
 
 ## Application Features
-- Login & Reguster User
+- Login & Reguster user
+- Email verification
+- Reset password user
 - Latest message from another user
 - Search another user
 - Chatroom
 - Input message with text, photo, and audio
 - Notification new message
 - Online status another user
-- User Profil
+- User profil
 
 ## Framework & Libraries
 - React JS
